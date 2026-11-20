@@ -30,6 +30,10 @@
   .print-table td { padding:4px 5px!important; vertical-align:middle!important; }
   .print-table .pkorean .print-example { margin-top:1px!important; font-size:8pt; line-height:1.22; color:#888; }
 }
+/* v17: increase emoji-to-English spacing in PDF only */
+@media print {
+  .print-table .pemoji { width:59px!important; min-width:59px!important; }
+}
 /* v13: website-only column proportions; PDF remains unchanged */
 @media screen {
   .table .en { width:20%; }
